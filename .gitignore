@@ -19,3 +19,6 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
+/public/css/tailwind.css
+/public/js/site.js
+/public/mix-manifest.json
