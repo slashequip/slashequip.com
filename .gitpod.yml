@@ -1,9 +1,0 @@
-ports:
-  - port: 3000
-    onOpen: ignore
-
-tasks:
-  - name: Compile assets and serve
-    init: npm install
-    command: npm run dev
-    openMode: split-right

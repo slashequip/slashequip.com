@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en" x-data :class="$store.darkMode.on ? 'dark' : ''" class="h-full antialiased js-focus-visible">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{{ $title }} — SlashEquip</title>
+        <meta name="description" content="{{ $intro | strip_tags | entities }}">
+        <link rel="stylesheet" href="{{ mix src='css/tailwind.css' }}">
+        <script defer src="{{ mix src='/js/site.js' }}"></script>
+    </head>
+    <body class="flex h-full flex-col bg-zinc-50 dark:bg-black">
+        <div>
+            <div class="fixed inset-0 flex justify-center sm:px-8">
+                <div class="flex w-full max-w-7xl lg:px-8">
+                    <div class="w-full bg-white ring-1 ring-zinc-100 dark:bg-zinc-900 dark:ring-zinc-300/20"></div>
+                </div>
+            </div>
+
+            {{ partial:header }}
+
+            <main>
+                {{ $template_content }}
+            </main>
+
+            {{ partial:footer }}
+        </div>
+    </body>
+</html>
