@@ -27,5 +27,5 @@ $redirects = [
 ];
 
 foreach ($redirects as $redirect) {
-    Route::redirect($redirect, "articles/{$redirect}");
+    Route::redirect($redirect, "/articles/{$redirect}", 301);
 }
