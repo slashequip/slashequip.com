@@ -1,0 +1,45 @@
+<div class="sm:px-8 mt-16 lg:mt-32">
+    <div class="mx-auto max-w-7xl lg:px-8">
+        <div class="relative px-4 sm:px-8 lg:px-12">
+            <div class="mx-auto max-w-2xl lg:max-w-5xl">
+                <div class="xl:relative">
+                    <div class="mx-auto max-w-2xl">
+                        <a href="/tenets" aria-label="Go back to tenets"
+                                class="group mb-8 flex h-10 w-10 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 transition dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0 dark:ring-white/10 dark:hover:border-zinc-700 dark:hover:ring-white/20 lg:absolute lg:-left-5 lg:-mt-2 lg:mb-0 xl:-top-1.5 xl:left-0 xl:mt-0">
+                            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"
+                                 class="h-4 w-4 stroke-zinc-500 transition group-hover:stroke-zinc-700 dark:stroke-zinc-500 dark:group-hover:stroke-zinc-400">
+                                <path d="M7.25 11.25 3.75 8m0 0 3.5-3.25M3.75 8h8.5" stroke-width="1.5"
+                                      stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </a>
+                        <article>
+                            <header class="flex flex-col">
+                                <h1 class="mt-6 text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+                                    {{ title }}
+                                </h1>
+                                <span class="order-first flex items-center text-base text-zinc-400 dark:text-zinc-500">
+                                    <span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span>
+                                    <span class="ml-3 font-semibold tracking-widest">#{{ tenet_number | str_pad_left:3:0 }}</span>
+                                </span>
+                            </header>
+                            <p class="mt-6 text-lg text-zinc-600 dark:text-zinc-400">
+                                {{ summary | strip_tags }}
+                            </p>
+                            <div class="mt-8 prose dark:prose-invert">
+                                {{ body }}
+                            </div>
+                            {{ if linkedin_link }}
+                                <a href="{{ linkedin_link }}" target="_blank" rel="noopener noreferrer" class="group mt-8 inline-flex items-center gap-2 text-sm font-medium text-zinc-400 transition hover:text-zinc-600 dark:text-zinc-500 dark:hover:text-zinc-300">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true" class="h-5 w-5 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300">
+                                        <path d="M18.335 18.339H15.67v-4.177c0-.996-.02-2.278-1.39-2.278-1.389 0-1.601 1.084-1.601 2.205v4.25h-2.666V9.75h2.56v1.17h.035c.358-.674 1.228-1.387 2.528-1.387 2.7 0 3.2 1.778 3.2 4.091v4.715zM7.003 8.575a1.546 1.546 0 01-1.548-1.549 1.548 1.548 0 111.547 1.549zm1.336 9.764H5.666V9.75H8.34v8.589zM19.67 3H4.329C3.593 3 3 3.58 3 4.297v15.406C3 20.42 3.594 21 4.328 21h15.338C20.4 21 21 20.42 21 19.703V4.297C21 3.58 20.4 3 19.666 3h.003z"></path>
+                                    </svg>
+                                    Read on LinkedIn
+                                </a>
+                            {{ /if }}
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

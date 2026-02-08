@@ -1,0 +1,78 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: tenet_number
+            field:
+              type: integer
+              display: 'Tenet Number'
+              icon: integer
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: summary
+            field:
+              type: markdown
+              localizable: true
+              display: Summary
+              instructions_position: above
+              listable: hidden
+              visibility: visible
+              automatic_line_breaks: true
+              automatic_links: false
+              escape_markup: false
+              smartypants: false
+              restrict: false
+              antlers: false
+              hide_display: false
+          -
+            handle: body
+            field:
+              automatic_line_breaks: true
+              automatic_links: false
+              escape_markup: false
+              smartypants: false
+              restrict: false
+              antlers: false
+              type: markdown
+              display: Body
+              icon: markdown
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: linkedin_link
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Linkedin Link'
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+title: Tenet
