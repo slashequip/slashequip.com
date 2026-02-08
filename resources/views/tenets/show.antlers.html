@@ -1,3 +1,14 @@
+{{ section:social_meta }}
+    <meta property="og:title" content="#{{ tenet_number | str_pad_left:3:0 }} {{ title }} — SlashEquip">
+    <meta property="og:description" content="{{ summary | strip_tags }}">
+    <meta property="og:image" content="{{ config:app:url }}/assets/compass.png">
+    <meta property="og:type" content="article">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="#{{ tenet_number | str_pad_left:3:0 }} {{ title }} — SlashEquip">
+    <meta name="twitter:description" content="{{ summary | strip_tags }}">
+    <meta name="twitter:image" content="{{ config:app:url }}/assets/compass.png">
+{{ /section:social_meta }}
+
 <div class="sm:px-8 mt-16 lg:mt-32">
     <div class="mx-auto max-w-7xl lg:px-8">
         <div class="relative px-4 sm:px-8 lg:px-12">
