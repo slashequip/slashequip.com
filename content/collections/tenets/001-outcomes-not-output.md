@@ -9,5 +9,6 @@ body: |-
 
   We don't always get it right, far from it. But when we do, it's because we've focused on outcomes, not output. You can have both - but when we get it wrong, it's almost always because we chased output and ignored outcomes.
 updated_by: 2f816076-198e-40ef-886a-acee3367d3cf
-updated_at: 1770581331
+updated_at: 1770588219
+linkedin_link: 'https://www.linkedin.com/feed/update/urn:li:activity:7426359595335385088/'
 ---
